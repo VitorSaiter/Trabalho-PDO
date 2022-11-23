@@ -1,11 +1,11 @@
 
-DROP SCHEMA IF EXISTS `AulaTec` ;
+DROP SCHEMA IF EXISTS `pw` ;
 
 -- -----------------------------------------------------
 -- Schema AulaTec
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `AulaTec` DEFAULT CHARACTER SET utf8 ;
-USE `AulaTec` ;
+CREATE SCHEMA IF NOT EXISTS `pw` DEFAULT CHARACTER SET utf8 ;
+USE `pw` ;
 
 -- -----------------------------------------------------
 -- Table `Cliente`
