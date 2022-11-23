@@ -91,5 +91,14 @@ class Ordem extends Crud{
         $stmt->execute();
         return $stmt->fetchAll();
     }
+    
+      public function deletarOS($campo, $id){
+        $sqlDel = "delete from ItemOS where
+        $campo=:delPar;";
+        $sqlDel .= "delete from {$this->tabela} where $campo=:delPar;";
+        $stmt = Conexao::prepare($sqlDel);
+        $stmt->bindParam(':delPar',$id,PDO::PARAM_INT);
+        $stmt->execute();
+    }
 
 }
